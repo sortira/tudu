@@ -17,12 +17,20 @@
         <p class="text-center mt-3 lead">
             Tudu: This is a simple To-Do App where you can manage your tasks easily. Stay organized and get things done!
         </p>
+
+
+        
         <nav>
             {% if not user.is_authenticated %}
                 <a href="{{ url_for('login') }}" class="btn">Login</a>
                 <a href="{{ url_for('signup') }}" class="btn">Sign Up</a>
             {% endif %}
         </nav>
+        {% if not user.is_authenticated %}
+        <p class="text-center mt-3 lead" style="color: dimgrey;">
+            Tudu is a simple yet effective tool for managing your daily tasks. It’s an attempt to learn and implement authentication using Flask and Firebase, providing users with a secure, personalized experience. Whether you're managing tasks for work or personal projects, this app ensures that your information is safely stored and easily accessible. With the integration of Firebase for user authentication and real-time database functionality, this app is a great starting point for anyone looking to explore the power of Flask in full-stack web development.
+        </p>
+        {% endif %}
 
         {% if user.is_authenticated %}
         <div class="mt-4">
