@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="/static/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <title>ToDo</title>
+    <title>Tudu</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             Welcome, {% if user.is_authenticated %} {{ user.username }} {% else %} Guest {% endif %}
         </h1>
         <p class="text-center mt-3 lead">
-            This is a simple To-Do App where you can manage your tasks easily. Stay organized and get things done!
+            Tudu: This is a simple To-Do App where you can manage your tasks easily. Stay organized and get things done!
         </p>
         <nav>
             {% if not user.is_authenticated %}
