@@ -34,7 +34,7 @@ How to Use
     Logout: You can log out at any time to securely end your session.
 
 Folder Structure
-
+```
 /todo-app-flask-firebase
 │
 ├── app.py                # Main Flask application
@@ -44,7 +44,7 @@ Folder Structure
 │   └── signup.html
 ├── static/               # Static files (CSS, JS)
 │   └── styles.css
-
+```
 License
 
 This project is open-source and available under the MIT License.
